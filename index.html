@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#0B2D73" />
-  <meta name="description" content="Aqua Vision: proyecto escolar para detectar, alertar y detener el desperdicio de agua en los colegios." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B2D73">
+  <meta name="description" content="Aqua Vision: proyecto escolar de Los Protectores del Agua para detectar, alertar y detener el desperdicio de agua en los colegios.">
+  <meta property="og:title" content="Aqua Vision">
+  <meta property="og:description" content="Tecnología escolar para cuidar el agua.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="social-preview.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
   <title>Aqua Vision | Los Protectores del Agua</title>
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="progress" id="progress"></div>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#inicio" class="brand" aria-label="Aqua Vision, inicio">
-        <div class="brand-drop">◉</div>
-        <div>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <span class="drop-logo">◉</span>
+        <span>
           <strong>AQUA VISION</strong>
-          <span>LOS PROTECTORES DEL AGUA</span>
-        </div>
+          <small>LOS PROTECTORES DEL AGUA</small>
+        </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="main-nav" id="mainNav">
+      <nav class="nav-links" id="navLinks">
         <a href="#historia">Historia</a>
-        <a href="#funciona">Funcionamiento</a>
+        <a href="#funcionamiento">Funcionamiento</a>
         <a href="#simulador">Simulador</a>
-        <a href="#importancia">Importancia</a>
+        <a href="#impacto">Impacto</a>
         <a href="#juegos">Juegos</a>
         <a href="#equipo">Equipo</a>
       </nav>
@@ -38,269 +44,249 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="floating-drops" aria-hidden="true">
+      <div class="bubbles" aria-hidden="true">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
 
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">💧 Proyecto escolar de innovación</span>
-          <h1>AQUA <span>VISION</span></h1>
+          <span class="pill">💧 Innovación escolar</span>
+          <h1>AQUA <em>VISION</em></h1>
           <p>
-            Aqua Vision es una propuesta de <strong>Los Protectores del Agua</strong>
-            para detectar el desperdicio de agua, advertir a tiempo y actuar
-            automáticamente cuando el malgasto continúa.
+            Un sistema creado por <strong>Los Protectores del Agua</strong> para detectar
+            el desperdicio, activar alertas, informar al docente y cerrar automáticamente
+            el grifo cuando el malgasto continúa.
           </p>
           <div class="hero-actions">
-            <a href="#simulador" class="btn btn-primary">Probar el simulador</a>
-            <a href="#juegos" class="btn btn-secondary">Aprender jugando</a>
+            <a href="#simulador" class="btn primary">Probar simulador</a>
+            <a href="#juegos" class="btn secondary">Aprender jugando</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="vision-drop">
-            <div class="camera-lens"></div>
-            <div class="scan-line"></div>
+        <div class="hero-card reveal">
+          <div class="main-drop">
+            <div class="lens"></div>
+            <div class="scan"></div>
           </div>
-          <div class="team-badge">
-            <small>EQUIPO</small>
+          <div class="team-label">
+            <span>EQUIPO</span>
             <strong>LOS PROTECTORES DEL AGUA</strong>
           </div>
         </div>
       </div>
 
-      <div class="wave wave-one"></div>
-      <div class="wave wave-two"></div>
+      <div class="wave wave-a"></div>
+      <div class="wave wave-b"></div>
     </section>
 
-    <section id="historia" class="section">
-      <div class="container two-col">
-        <article class="feature-panel reveal">
-          <span class="eyebrow light">Nuestra inspiración</span>
+    <section class="section" id="historia">
+      <div class="container split">
+        <article class="blue-panel reveal">
+          <span class="pill light">Nuestra inspiración</span>
           <h2>¿Por qué nace Aqua Vision?</h2>
           <p>
-            En muchos colegios, un grifo puede quedar abierto, una fuga puede pasar
-            desapercibida o alguien puede jugar con el agua durante varios minutos.
-            Cuando nadie interviene a tiempo, se desperdicia un recurso indispensable.
+            En los colegios, un grifo abierto, una fuga no reportada o el juego con el agua
+            pueden provocar un desperdicio constante. Muchas veces nadie lo detecta de inmediato.
           </p>
           <p>
-            Aqua Vision nace para convertir la tecnología en una aliada del cuidado del
-            agua. El sistema observa, registra, alerta, informa y finalmente detiene el
-            flujo cuando la situación no se corrige.
+            Aqua Vision nace para observar, advertir, informar y actuar antes de que el problema
+            continúe. La tecnología se convierte así en una herramienta educativa y preventiva.
           </p>
         </article>
 
-        <div class="story-copy reveal">
-          <span class="eyebrow">Nuestra misión</span>
-          <h2>Tecnología que educa y protege</h2>
-          <p>
-            El objetivo no es únicamente cerrar un grifo. También se busca formar buenos
-            hábitos, apoyar a los docentes y ayudar a que los estudiantes comprendan que
-            cada gota cuenta.
+        <div class="reveal">
+          <span class="pill">Nuestra misión</span>
+          <h2 class="section-title left">Tecnología que educa y protege</h2>
+          <p class="muted">
+            El propósito no es solamente cerrar un grifo. También buscamos formar hábitos,
+            apoyar a los docentes y demostrar que cada gota cuenta.
           </p>
-          <div class="mini-points">
-            <div><span>✓</span> Detectar a tiempo</div>
-            <div><span>✓</span> Prevenir el desperdicio</div>
-            <div><span>✓</span> Educar con tecnología</div>
-            <div><span>✓</span> Informar al docente</div>
+          <div class="check-grid">
+            <div>✓ Detectar a tiempo</div>
+            <div>✓ Evitar el desperdicio</div>
+            <div>✓ Informar al docente</div>
+            <div>✓ Crear conciencia</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="funciona" class="section section-soft">
+    <section class="section soft" id="funcionamiento">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Cuatro partes conectadas</span>
-          <h2>Así está construido Aqua Vision</h2>
-          <p>Cada componente cumple una función y todos trabajan de manera coordinada.</p>
+        <div class="heading reveal">
+          <span class="pill">Cuatro componentes</span>
+          <h2>Así funciona Aqua Vision</h2>
+          <p>Cada parte cumple una función y todas trabajan de forma coordinada.</p>
         </div>
 
-        <div class="component-grid">
-          <article class="component-card reveal">
-            <div class="icon-box">📷</div>
+        <div class="cards four">
+          <article class="card reveal">
+            <div class="icon">📷</div>
             <h3>Cámara inteligente</h3>
-            <p>Detecta un posible malgasto y genera un video como evidencia del evento.</p>
+            <p>Detecta un posible malgasto de agua y genera evidencia en video.</p>
           </article>
-          <article class="component-card reveal">
-            <div class="icon-box">🔌</div>
+          <article class="card reveal">
+            <div class="icon">🔌</div>
             <h3>Cableado</h3>
-            <p>Transporta las señales entre la cámara, la alarma y el sistema de control.</p>
+            <p>Transporta las señales hacia la alarma, las notificaciones y el cierre.</p>
           </article>
-          <article class="component-card reveal">
-            <div class="icon-box">🚨</div>
-            <h3>Alarma preventiva</h3>
-            <p>Advierte a la persona para que pueda cerrar el grifo y corregir su conducta.</p>
+          <article class="card reveal">
+            <div class="icon">🚨</div>
+            <h3>Alarma</h3>
+            <p>Advierte de inmediato para que la persona pueda corregir su acción.</p>
           </article>
-          <article class="component-card reveal">
-            <div class="icon-box">✉️</div>
+          <article class="card reveal">
+            <div class="icon">✉️</div>
             <h3>Notificaciones</h3>
-            <p>Envía avisos al correo del docente y genera una alerta máxima si continúa.</p>
+            <p>Envía avisos al correo del docente y genera una alerta máxima.</p>
           </article>
         </div>
 
-        <div class="process reveal">
-          <div class="process-step">
-            <b>1</b><span>Detección</span><small>La cámara identifica el evento.</small>
-          </div>
-          <div class="process-step">
-            <b>2</b><span>Evidencia</span><small>Se registra un video.</small>
-          </div>
-          <div class="process-step">
-            <b>3</b><span>Advertencia</span><small>Se activa la alarma.</small>
-          </div>
-          <div class="process-step">
-            <b>4</b><span>Cierre</span><small>El grifo se bloquea si continúa.</small>
-          </div>
-          <div class="process-step danger">
-            <b>5</b><span>Alerta máxima</span><small>Se envía una segunda notificación.</small>
-          </div>
+        <div class="steps reveal">
+          <div><b>1</b><strong>Detección</strong><span>La cámara identifica el evento.</span></div>
+          <div><b>2</b><strong>Evidencia</strong><span>Se registra un video.</span></div>
+          <div><b>3</b><strong>Advertencia</strong><span>Se activa la alarma.</span></div>
+          <div><b>4</b><strong>Cierre</strong><span>El grifo se bloquea.</span></div>
+          <div class="danger"><b>5</b><strong>Alerta máxima</strong><span>Se envía otra notificación.</span></div>
         </div>
       </div>
     </section>
 
-    <section id="simulador" class="section">
+    <section class="section" id="simulador">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Experiencia interactiva</span>
-          <h2>Simulador de Aqua Vision</h2>
-          <p>Presiona el botón y observa cómo respondería el sistema.</p>
+        <div class="heading reveal">
+          <span class="pill">Experiencia interactiva</span>
+          <h2>Simulador del sistema</h2>
+          <p>Presiona el botón y observa cómo reaccionaría Aqua Vision.</p>
         </div>
 
         <div class="simulator reveal">
-          <div class="faucet-zone">
-            <div class="faucet-emoji">🚰</div>
-            <div class="water-stream" id="waterStream"></div>
-            <div class="simulator-actions">
-              <button id="startSimulation" class="btn btn-light">Abrir grifo</button>
-              <button id="resetSimulation" class="btn btn-outline-light hidden">Reiniciar</button>
+          <div class="tap-zone">
+            <div class="tap">🚰</div>
+            <div class="stream" id="stream"></div>
+            <div class="sim-actions">
+              <button class="btn light-btn" id="startSim">Abrir grifo</button>
+              <button class="btn ghost hidden" id="resetSim">Reiniciar</button>
             </div>
           </div>
 
-          <div class="status-panel">
+          <div class="status">
             <h3>Estado del sistema</h3>
-            <div class="status-list">
-              <div class="status-item" id="status1">📷 Cámara supervisando el área.</div>
-              <div class="status-item" id="status2">🎥 Desperdicio detectado y video registrado.</div>
-              <div class="status-item" id="status3">🚨 Alarma preventiva activada.</div>
-              <div class="status-item" id="status4">✉️ Primer aviso enviado al docente.</div>
-              <div class="status-item" id="status5">🚰 Grifo cerrado automáticamente.</div>
-              <div class="status-item danger" id="status6">⚠️ Alerta máxima enviada.</div>
-            </div>
+            <div id="s1" class="status-item">📷 Cámara supervisando el área.</div>
+            <div id="s2" class="status-item">🎥 Desperdicio detectado y video registrado.</div>
+            <div id="s3" class="status-item">🚨 Alarma preventiva activada.</div>
+            <div id="s4" class="status-item">✉️ Primer aviso enviado al docente.</div>
+            <div id="s5" class="status-item">🚰 Grifo cerrado automáticamente.</div>
+            <div id="s6" class="status-item danger">⚠️ Alerta máxima enviada.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="importancia" class="section section-soft">
+    <section class="section soft" id="impacto">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Cultura ambiental</span>
-          <h2>La importancia de cuidar el agua en el colegio</h2>
-          <p>La escuela es un lugar clave para formar hábitos que pueden durar toda la vida.</p>
+        <div class="heading reveal">
+          <span class="pill">Cultura ambiental</span>
+          <h2>¿Por qué cuidar el agua en el colegio?</h2>
+          <p>La escuela es el lugar ideal para formar hábitos que pueden durar toda la vida.</p>
         </div>
 
-        <div class="stats-grid">
-          <div class="stat-card reveal"><strong data-count="4">0</strong><span>componentes coordinados</span></div>
-          <div class="stat-card reveal"><strong data-count="5">0</strong><span>etapas de respuesta</span></div>
-          <div class="stat-card reveal"><strong data-count="2">0</strong><span>niveles de notificación</span></div>
-          <div class="stat-card reveal"><strong data-count="1">0</strong><span>misión: proteger el agua</span></div>
+        <div class="stats">
+          <div class="stat reveal"><strong data-target="4">0</strong><span>componentes conectados</span></div>
+          <div class="stat reveal"><strong data-target="5">0</strong><span>etapas de respuesta</span></div>
+          <div class="stat reveal"><strong data-target="2">0</strong><span>niveles de notificación</span></div>
+          <div class="stat reveal"><strong data-target="1">0</strong><span>misión: cuidar el agua</span></div>
         </div>
 
-        <div class="tips-grid">
-          <article class="tip-card reveal">
-            <h3>En los baños</h3>
-            <p>Cierra bien el grifo, evita jugar con el agua y reporta cualquier fuga.</p>
+        <div class="cards three tips">
+          <article class="card reveal">
+            <h3>Baños y lavaderos</h3>
+            <p>Cierra bien los grifos y reporta cualquier fuga de inmediato.</p>
           </article>
-          <article class="tip-card reveal">
-            <h3>Durante la limpieza</h3>
-            <p>Usa solo el agua necesaria y evita dejar correr el agua sin necesidad.</p>
+          <article class="card reveal">
+            <h3>Limpieza responsable</h3>
+            <p>Usa solo el agua necesaria y evita chorros continuos.</p>
           </article>
-          <article class="tip-card reveal">
-            <h3>En la comunidad escolar</h3>
-            <p>Comparte buenas prácticas y conviértete en ejemplo para tus compañeros.</p>
+          <article class="card reveal">
+            <h3>Comunidad escolar</h3>
+            <p>Comparte buenas prácticas y conviértete en ejemplo para otros.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="juegos" class="section">
+    <section class="section" id="juegos">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Aprender jugando</span>
+        <div class="heading reveal">
+          <span class="pill">Aprender jugando</span>
           <h2>Reto del agua</h2>
         </div>
 
-        <div class="quiz-layout reveal">
+        <div class="quiz reveal">
           <div class="tank-panel">
             <h3>Mantén el tanque lleno</h3>
-            <div class="tank">
-              <div class="tank-water" id="tankWater"></div>
-            </div>
-            <strong id="quizScore">Puntaje: 0</strong>
+            <div class="tank"><div id="tankWater" class="tank-water"></div></div>
+            <strong id="score">Puntaje: 0</strong>
           </div>
 
-          <div class="quiz-card">
-            <h3 id="quizQuestion"></h3>
-            <div id="quizOptions" class="quiz-options"></div>
-            <p id="quizFeedback" class="quiz-feedback"></p>
-            <button id="nextQuestion" class="btn btn-primary hidden">Siguiente</button>
+          <div class="question-card">
+            <h3 id="question"></h3>
+            <div id="answers" class="answers"></div>
+            <p id="feedback" class="feedback"></p>
+            <button id="nextQuestion" class="btn primary hidden">Siguiente</button>
           </div>
         </div>
 
-        <div class="section-heading compact reveal">
-          <span class="eyebrow">Juego de memoria</span>
+        <div class="heading compact reveal">
+          <span class="pill">Memoria</span>
           <h2>Encuentra los pares</h2>
         </div>
 
-        <div class="memory-grid reveal" id="memoryGrid"></div>
-        <p id="memoryMessage" class="game-message"></p>
+        <div id="memory" class="memory reveal"></div>
+        <p id="memoryMsg" class="center-message"></p>
 
-        <div class="certificate-area reveal">
-          <button id="certificateButton" class="btn btn-primary">Crear certificado</button>
+        <div class="certificate-wrap reveal">
+          <button id="makeCertificate" class="btn primary">Crear certificado</button>
           <div id="certificate" class="certificate hidden">
             <p>Se otorga el presente reconocimiento a</p>
             <h3 id="certificateName">PROTECTOR/A DEL AGUA</h3>
             <h2>PROTECTOR DEL AGUA</h2>
             <p>Por completar los retos educativos de Aqua Vision.</p>
-            <strong>Equipo Los Protectores del Agua</strong>
-            <button class="btn btn-secondary" onclick="window.print()">Imprimir</button>
+            <strong>Los Protectores del Agua</strong>
+            <button class="btn secondary" onclick="window.print()">Imprimir</button>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="equipo" class="section section-soft">
+    <section class="section soft" id="equipo">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Nuestro equipo</span>
+        <div class="heading reveal">
+          <span class="pill">Nuestro equipo</span>
           <h2>Los Protectores del Agua</h2>
         </div>
 
-        <div class="team-card reveal">
-          <div class="team-avatar">💧</div>
+        <article class="leader-card reveal">
+          <div class="leader-avatar">💧</div>
           <div>
             <span>LÍDER DEL PROYECTO</span>
             <h3>ÁLVARO ESCATE</h3>
             <p>
-              Coordinó la idea, la explicación del funcionamiento y la propuesta de
-              Aqua Vision para fomentar el cuidado del agua en el colegio.
+              Coordinó la propuesta, la explicación del funcionamiento y la presentación
+              de Aqua Vision para fomentar el cuidado responsable del agua.
             </p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="final-cta reveal">
-          <span class="eyebrow">Nuestro compromiso</span>
+        <div class="final-card reveal">
+          <span class="pill">Nuestro compromiso</span>
           <h2>Cuidamos el agua, cuidamos el futuro</h2>
-          <p>
-            Aqua Vision combina tecnología, educación y prevención para construir una
-            comunidad escolar más responsable.
-          </p>
-          <a href="#inicio" class="btn btn-primary">Volver al inicio</a>
+          <p>Aqua Vision combina tecnología, educación y prevención.</p>
+          <a href="#inicio" class="btn primary">Volver al inicio</a>
         </div>
       </div>
     </section>
@@ -309,10 +295,10 @@
   <footer>
     <div class="container">
       <strong>AQUA VISION</strong>
-      <p>Equipo: Los Protectores del Agua · Proyecto escolar para cuidar el agua.</p>
+      <p>Equipo: Los Protectores del Agua</p>
     </div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

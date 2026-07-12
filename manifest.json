@@ -1,0 +1,9 @@
+{
+  "name": "Aqua Vision",
+  "short_name": "Aqua Vision",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F5FBFF",
+  "theme_color": "#0B2D73",
+  "description": "Proyecto escolar para cuidar el agua."
+}

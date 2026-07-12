@@ -1,24 +1,23 @@
-# Aqua Vision V2
+# Aqua Vision V3
 
-Versión responsive y mobile-first del proyecto escolar **Aqua Vision**.
+Versión responsive, mobile-first y lista para GitHub Pages.
 
-## Estructura
+Todos los archivos están en la raíz:
 
-- `index.html`
-- `css/styles.css`
-- `js/app.js`
+- index.html
+- styles.css
+- app.js
+- manifest.json
+- favicon.svg
+- social-preview.svg
+- README.md
 
-## Publicar en GitHub Pages
+## Publicar
 
-1. Crea o abre el repositorio `aqua-vision`.
-2. Sube el contenido completo de esta carpeta conservando las carpetas `css` y `js`.
-3. En GitHub abre `Settings > Pages`.
-4. Selecciona `Deploy from a branch`.
-5. Elige la rama `main` y la carpeta `/ (root)`.
-6. Guarda.
+1. Sube todos los archivos a la raíz del repositorio.
+2. En GitHub abre Settings > Pages.
+3. Selecciona Deploy from a branch.
+4. Elige main y /(root).
+5. Guarda.
 
-La URL seguirá siendo la misma mientras no cambies el usuario de GitHub ni el nombre del repositorio.
-
-## Actualizar una versión anterior
-
-Reemplaza el archivo `index.html` anterior y agrega las carpetas `css` y `js`.
+La URL no cambia mientras mantengas el mismo usuario y repositorio.

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5FBFF"/><stop offset="1" stop-color="#DDF4FF"/></linearGradient><linearGradient id="d" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#49B7FF"/><stop offset="1" stop-color="#0B2D73"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<path fill="url(#d)" d="M860 90c-70 110-170 210-170 330a170 170 0 0 0 340 0c0-120-100-220-170-330z"/>
+<circle cx="860" cy="365" r="78" fill="#fff"/><circle cx="860" cy="365" r="50" fill="#0B2D73"/>
+<text x="90" y="250" font-family="Arial" font-size="110" font-weight="900" fill="#0B2D73">AQUA</text>
+<text x="90" y="360" font-family="Arial" font-size="110" font-weight="900" fill="#1686E3">VISION</text>
+<text x="95" y="430" font-family="Arial" font-size="34" font-weight="700" fill="#17304F">LOS PROTECTORES DEL AGUA</text>
+</svg>
