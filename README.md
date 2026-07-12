@@ -21,3 +21,7 @@ Todos los archivos están en la raíz:
 5. Guarda.
 
 La URL no cambia mientras mantengas el mismo usuario y repositorio.
+
+
+## Versión 4
+Se agregó la sección responsive con los seis integrantes del equipo, sin roles.
